@@ -1,0 +1,2 @@
+fix: true # default: false
+ruby_version: 2.6.3 # default: RUBY_VERSION
