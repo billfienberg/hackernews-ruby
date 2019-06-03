@@ -1,8 +1,8 @@
-class Link < ApplicationRecord
-  belongs_to :user, optional: true
+class Link < ActiveRecord::Base
+  belongs_to :user, validate: true
 
-  validates :url, presence: true, length: { minimum: 5 }
-  validates :description, presence: true, length: { minimum: 5 }
+  has_many :votes, dependent: :destroy
 
-  has_many :votes
+  validates :url, presence: true, url: true, length: { minimum: 3 }
+  validates :description, presence: true, length: { minimum: 3 }
 end

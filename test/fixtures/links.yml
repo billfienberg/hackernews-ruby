@@ -1,9 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  url: MyString
-  description: MyText
+# Comment out link fixtures because these do not exist in the tutorial repo:
+# https://github.com/howtographql/graphql-ruby/tree/master/test
 
-two:
-  url: MyString
-  description: MyText
+# one:
+#   url: MyString
+#   description: MyText
+
+# two:
+#   url: MyString
+#   description: MyText
